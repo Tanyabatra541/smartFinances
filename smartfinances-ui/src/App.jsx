@@ -73,11 +73,7 @@ export default function App() {
         </h2>
 
         <p style={{ marginBottom: "1rem", color: "#cbd5e1" }}>
-          Upload a <b>3-month bank statement</b> (CSV with columns:
-          <br />
-          <span style={{ color: "#94a3b8" }}>
-            Date, Description, Type, Amount, Balance
-          </span>
+          Upload a <b>3-month bank statement</b>
         </p>
 
         <div
@@ -136,6 +132,9 @@ export default function App() {
             <h3 style={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
               Summary
             </h3>
+            <p>
+              <b>Bank Detected:</b> {summary.bank}
+            </p>
             <p>
               <b>Total Income:</b> ${summary.total_income.toLocaleString()}
             </p>
